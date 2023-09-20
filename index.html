@@ -21,9 +21,10 @@
   </head>
   <body>
     <header>
+      <div class="scroll__header" id="scroll1">
       <div class="header__inner">
         <a href="#" class="header__logo">YourTour</a>
-        <nav class="nav">
+        <nav class="header__nav">
           <a href="#" class="nav__link">Туры</a>
           <a href="#" class="nav__link">Создать Тур</a>
           <a href="#" class="nav__link">Отзывы</a>
@@ -31,6 +32,17 @@
         </nav>
         <a href="#" class="nav__link numb">+7 999 999 99 99</a>
       </div>
+    </div>
+    <div class="header__inner">
+      <a href="#" class="header__logo">YourTour</a>
+      <nav class="header__nav">
+        <a href="#" class="nav__link">Туры</a>
+        <a href="#" class="nav__link">Создать Тур</a>
+        <a href="#" class="nav__link">Отзывы</a>
+        <a href="#" class="nav__link">Истории</a>
+      </nav>
+      <a href="#" class="nav__link numb">+7 999 999 99 99</a>
+    </div>
       <div class="intro">
         <div class="container">
           <div class="intro__inner">
@@ -49,85 +61,99 @@
       <section class="header__main">
         <h1 class="main__title">Выбери свой тур</h1>
         <nav class="tabs__main">
-          <a href="#" class="main__link active">Популярные</a>
-          <a href="#" class="main__link">Авторские</a>
-          <a href="#" class="main__link">Походы</a>
-          <a href="#" class="main__link">Сплавы</a>
-          <a href="#" class="main__link">Вылопрогулки</a>
+          <a href="#" class="main__link active" data-tab="#tab_1">Популярные</a>
+          <a href="#" class="main__link" data-tab="#tab_2">Авторские</a>
+          <a href="#" class="main__link" data-tab="#tab_3">Походы</a>
+          <a href="#" class="main__link" data-tab="#tab_4">Сплавы</a>
+          <a href="#" class="main__link" data-tab="#tab_5">Велопрогулки</a>
         </nav>
-        <div class="popular__block">
-          <div class="popular__item firstPic">
-            <div class="popular__back">
-              <div class="item__title">
-                <p>Путешествие в&nbsp;горы</p>
-                <span>от 80 000 руб</span>
+        <section class="navlink-item active" id="tab_1">
+          <div class="popular__block">
+            <div class="popular__item firstPic">
+              <div class="popular__back">
+                <div class="item__title">
+                  <p>Путешествие в&nbsp;горы</p>
+                  <span>от 80 000 руб</span>
+                </div>
+                <a href="#" class="item__btn"
+                  >Подробнее <img src="./assets/img/popular/str.svg" alt=""
+                /></a>
               </div>
-              <a href="#" class="item__btn"
-                >Подробнее <img src="./assets/img/popular/str.svg" alt=""
-              /></a>
+            </div>
+  
+            <div class="popular__item secPic">
+              <div class="popular__back">
+                <div class="item__title">
+                  <p>Путешествие в&nbsp;горы</p>
+                  <span>от 80 000 руб</span>
+                </div>
+                <a href="#" class="item__btn"
+                  >Подробнее <img src="./assets/img/popular/str.svg" alt=""
+                /></a>
+              </div>
+            </div>
+  
+            <div class="popular__item thirdPic">
+              <div class="popular__back">
+                <div class="item__title">
+                  <p>Путешествие в&nbsp;горы</p>
+                  <span>от 80 000 руб</span>
+                </div>
+                <a href="#" class="item__btn"
+                  >Подробнее <img src="./assets/img/popular/str.svg" alt=""
+                /></a>
+              </div>
+            </div>
+  
+            <div class="popular__item fourthPic">
+              <div class="popular__back">
+                <div class="item__title">
+                  <p>Путешествие в&nbsp;горы</p>
+                  <span>от 80 000 руб</span>
+                </div>
+                <a href="#" class="item__btn"
+                  >Подробнее <img src="./assets/img/popular/str.svg" alt=""
+                /></a>
+              </div>
+            </div>
+  
+            <div class="popular__item fivesPic">
+              <div class="popular__back">
+                <div class="item__title">
+                  <p>Путешествие в&nbsp;горы</p>
+                  <span>от 80 000 руб</span>
+                </div>
+                <a href="#" class="item__btn"
+                  >Подробнее <img src="./assets/img/popular/str.svg" alt=""
+                /></a>
+              </div>
+            </div>
+  
+            <div class="popular__item sixPic">
+              <div class="popular__back">
+                <div class="item__title">
+                  <p>Путешествие в&nbsp;горы</p>
+                  <span>от 80 000 руб</span>
+                </div>
+                <a href="#" class="item__btn"
+                  >Подробнее <img src="./assets/img/popular/str.svg" alt=""
+                /></a>
+              </div>
             </div>
           </div>
-
-          <div class="popular__item secPic">
-            <div class="popular__back">
-              <div class="item__title">
-                <p>Путешествие в&nbsp;горы</p>
-                <span>от 80 000 руб</span>
-              </div>
-              <a href="#" class="item__btn"
-                >Подробнее <img src="./assets/img/popular/str.svg" alt=""
-              /></a>
-            </div>
-          </div>
-
-          <div class="popular__item thirdPic">
-            <div class="popular__back">
-              <div class="item__title">
-                <p>Путешествие в&nbsp;горы</p>
-                <span>от 80 000 руб</span>
-              </div>
-              <a href="#" class="item__btn"
-                >Подробнее <img src="./assets/img/popular/str.svg" alt=""
-              /></a>
-            </div>
-          </div>
-
-          <div class="popular__item fourthPic">
-            <div class="popular__back">
-              <div class="item__title">
-                <p>Путешествие в&nbsp;горы</p>
-                <span>от 80 000 руб</span>
-              </div>
-              <a href="#" class="item__btn"
-                >Подробнее <img src="./assets/img/popular/str.svg" alt=""
-              /></a>
-            </div>
-          </div>
-
-          <div class="popular__item fivesPic">
-            <div class="popular__back">
-              <div class="item__title">
-                <p>Путешествие в&nbsp;горы</p>
-                <span>от 80 000 руб</span>
-              </div>
-              <a href="#" class="item__btn"
-                >Подробнее <img src="./assets/img/popular/str.svg" alt=""
-              /></a>
-            </div>
-          </div>
-
-          <div class="popular__item sixPic">
-            <div class="popular__back">
-              <div class="item__title">
-                <p>Путешествие в&nbsp;горы</p>
-                <span>от 80 000 руб</span>
-              </div>
-              <a href="#" class="item__btn"
-                >Подробнее <img src="./assets/img/popular/str.svg" alt=""
-              /></a>
-            </div>
-          </div>
-        </div>
+        </section>
+        <section class="navlink-item" id="tab_2">
+          Авторские
+        </section>
+        <section class="navlink-item" id="tab_3">
+          Походы
+        </section>
+        <section class="navlink-item" id="tab_4">
+          Сплавы
+        </section>
+        <section class="navlink-item" id="tab_5">
+          Велопрогулки
+        </section>
       </section>
       <section class="main__form">
         <div class="group__title">
@@ -149,14 +175,8 @@
               />
             </div>
 
-            <div class="lab_inp">
+            <div class="lab_inp arrow-select">
               <label for="sName">Направление</label>
-              <!-- <input
-                type="text"
-                name="sName"
-                id=""
-                placeholder="Куда хотите ехать"
-              /> -->
               <select name="Куда хотите поехать">
                 <option label value="">Куда хотите ехать</option>
                 <option value="Турция">Турция</option>
@@ -179,8 +199,9 @@
             <div class="lab_inp">
               <label for="sName">Телефон</label>
               <input
-                type="text"
+                type="tel"
                 name="sName"
+            
                 id=""
                 placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _"
               />
@@ -210,18 +231,21 @@
               <h3>Вам есть 18 лет?</h3>
               <div class="sign__btn">
                 <div class="btn__yeas">
-                  <input type="radio" name="yesNo" id="" />
-                  <p>Да</p>
+                  <input type="radio" name="yesNo" id="radio1" class="radio1"/>
+                  <label  class="fake__radio" for="radio1"></label>
+                  <p for="radio1">Да</p>
                 </div>
                 <div class="btn__yeas">
-                  <input type="radio" name="yesNo" id="" />
+                  <input type="radio" name="yesNo" id="radio2" class="radio2" />
+                  <label  class="fake__radio" for="radio2"></label>
                   <p>Нет</p>
                 </div>
               </div>
             </div>
             <div class="accept">
-              <input type="checkbox" name="accept" />
-              <label for="accept"
+              <input type="checkbox" name="accept" id="check1" class="checkbox"/>
+              <label class="fake__check" for="check1"></label>
+              <label class="label__text" for="check1"
                 >Нажимая кнопку, я принимаю условия
                 <span>Лицензионного договора</span>
               </label>
@@ -237,7 +261,7 @@
         <div class="group__title">
           <h1 class="main__title">Отзывы наших <br />путешественников</h1>
           <p>
-            Идейные соображения высшего порядка,<br />а также рамки и место
+            Идейные соображения высшего порядка, а <br />также рамки и место
             обучения кадров
           </p>
         </div>
@@ -287,7 +311,7 @@
         <div class="group__title">
           <h1 class="main__title">Фотографии путешествий</h1>
           <p>
-            Идейные соображения высшего порядка,<br />а также рамки и место
+            Идейные соображения высшего порядка, а <br />также рамки и место
             обучения кадров
           </p>
         </div>
@@ -316,7 +340,7 @@
         <div class="group__title">
           <h1 class="main__title">Фотографии путешествий</h1>
           <p>
-            Идейные соображения высшего порядка,<br />а также рамки и место
+            Идейные соображения высшего порядка, а <br />также рамки и место
             обучения кадров
           </p>
         </div>
@@ -394,6 +418,37 @@
           </div>
         </div>
       </div>
+      <section class="last__main">
+        <img src="./assets/img/footer.jpg" alt="#" />
+        <div class="details">
+          <h1>Пора в путешествие вместе с нами!</h1>
+          <p>
+            Напиши на почту и узнай подробности на
+<span> yourtour@gmail.com</span>
+          </p>
+        </div>
+      </section>
     </main>
+    <footer>
+      <section class="footer__content">
+      <h3>Наши социальные сети</h3>
+        <nav class="block__footer">
+          <div class="nav__social">
+            <img src="./assets/img/footer_icons/inst.svg" alt="">
+            <a href="">instagram</a>
+          </div>
+          <div class="nav__social">
+             <img src="./assets/img/footer_icons/face.svg" alt="">
+          <a href="">facebook</a>
+          </div>
+          <div class="nav__social">
+             <img src="./assets/img/footer_icons/vk.svg" alt="">
+          <a href="">vkontakte</a>
+          </div>
+      
+        </nav>
+      </div>
+    </footer>
+    <script src="./assets/js/js.js"></script>
   </body>
 </html>
