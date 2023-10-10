@@ -45,6 +45,7 @@ header {
 }
 
 .scroll__header {
+  max-width: 100%;
   width: 1920px;
   height: 88px;
   background: rgba(243, 239, 232, 0.6);
@@ -267,17 +268,19 @@ main {
 }
 
 .popular__item {
-  width: 370px;
+  width: 100%;
   height: 531px;
 
   background-size: 100%;
+
+  background-size: cover;
   border-radius: 50px;
   background-position: center;
   transition: 1s;
   cursor: pointer;
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   background-image: url("./img/popular/1.jpg");
-
+  background-repeat: no-repeat;
   transition: background-size 0.3s ease;
 }
 
@@ -310,7 +313,7 @@ main {
   padding: 50px;
   border-radius: 50px;
   position: inherit;
-  width: 370px;
+  width: 100%;
   height: 531px;
   background: linear-gradient(
     360deg,
@@ -435,12 +438,13 @@ main {
   border-radius: 50px 0 0 50px;
 }
 .firstPic {
-  width: 370px;
+  width: 100%;
   height: 531px;
   background-size: 100%;
   border-radius: 50px;
   overflow: hidden;
   cursor: pointer;
+  background-size: cover;
 }
 
 .main__form {
@@ -492,17 +496,21 @@ form {
   border-radius: 50px;
 
   margin-top: 100px;
+
+  max-width: 100%;
 }
 
 .form__block {
   display: flex;
   gap: 30px;
+  width: 100%;
 }
 
 .lab_inp {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: 100%;
 }
 .arrow-select {
   position: relative;
@@ -544,9 +552,9 @@ select {
 .lab_inp textarea {
   padding: 20px;
   gap: 10px;
-
-  width: 500px;
-  height: 68px;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
   background: #f9f7f4;
   border: 1px solid #f4f0e9;
   border-radius: 10px;
@@ -939,20 +947,30 @@ label span:hover {
 .img__line:last-child {
   margin: 0;
 }
-
+.firstLine,
+.thirdLine {
+  width: 97%;
+}
 .firstLine img {
-  width: 442.5px;
+  /* width: 442.5px; */
+  width: 23.8%;
   height: 301px;
   border-radius: 50px;
 }
 .secondLine img {
-  width: 349.16px;
+  /* width: 349.16px; */
+  width: 18.2%;
   height: 301px;
   border-radius: 50px;
 }
-
+.secondLine {
+  width: 97%;
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+}
 .thirdLine img {
-  width: 442.5px;
+  width: 23.8%;
   height: 301px;
 
   border-radius: 50px;
@@ -985,6 +1003,7 @@ label span:hover {
   margin-bottom: 50px;
   cursor: pointer;
   transition: background-size 0.3s ease;
+  max-width: 100%;
 }
 
 .block__story:last-child {
@@ -1015,6 +1034,7 @@ label span:hover {
     rgba(0, 0, 0, 0.2) 100%
   );
   cursor: pointer;
+  max-width: 100%;
 }
 
 .story__desc h3 {
@@ -1167,7 +1187,7 @@ footer {
 
   width: 1920px;
   height: 88px;
-
+  max-width: 100%;
   /* Beige 200 */
 
   background: #f4f0e9;
