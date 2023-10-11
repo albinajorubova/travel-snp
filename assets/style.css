@@ -37,9 +37,9 @@ input {
 }
 header {
   background: url("./img/header.jpg") center/cover no-repeat;
-  height: 52rem; /* Пример: 45rem для высоты */
-  width: 150em; /* Пример: 75em для ширины */
-  max-width: 100%; /* Максимальная ширина на всю доступную ширину */
+  height: 52rem;
+  width: 150em;
+  max-width: 100%;
 
   margin: 0;
 }
@@ -213,11 +213,8 @@ main {
   font-weight: 700;
   font-size: 59px;
   line-height: 124%;
-  /* or 73px */
 
   text-align: center;
-
-  /* Black */
 
   color: #1b1f2b;
 }
@@ -240,9 +237,6 @@ main {
   font-weight: 700;
   font-size: 23px;
   line-height: 122%;
-  /* identical to box height, or 28px */
-
-  /* Black */
 
   color: #1b1f2b;
 }
@@ -266,22 +260,30 @@ main {
   grid-template-columns: repeat(3, 1fr);
   max-width: 1170px;
 }
-
+.firstPic {
+  width: 100%;
+  height: 531px;
+  background-size: 100%;
+  border-radius: 50px;
+  overflow: hidden;
+  cursor: pointer;
+  background-size: cover;
+}
 .popular__item {
   width: 100%;
   height: 531px;
 
-  background-size: 100%;
-
   background-size: cover;
-  border-radius: 50px;
   background-position: center;
-  transition: 1s;
-  cursor: pointer;
-  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  width: 100%;
+  height: 531px;
+  border-radius: 50px;
   background-image: url("./img/popular/1.jpg");
   background-repeat: no-repeat;
+  background-size: 100%;
   transition: background-size 0.3s ease;
+  transform-origin: center center;
+  cursor: pointer;
 }
 
 .firstPic {
@@ -314,6 +316,7 @@ main {
   border-radius: 50px;
   position: inherit;
   width: 100%;
+
   height: 531px;
   background: linear-gradient(
     360deg,
@@ -326,6 +329,9 @@ main {
   justify-content: space-between;
 }
 
+.popular__item:hover {
+  background-size: 120% auto;
+}
 .item__title {
   display: flex;
   flex-direction: column;
@@ -339,9 +345,6 @@ main {
   font-weight: 500;
   font-size: 35px;
   line-height: 122%;
-  /* or 43px */
-
-  /* White */
 
   color: #ffffff;
   margin: 0;
@@ -353,11 +356,8 @@ main {
   font-weight: 400;
   font-size: 17px;
   line-height: 142%;
-  /* or 24px */
 
   letter-spacing: -0.01em;
-
-  /* White */
 
   color: #ffffff;
 }
@@ -366,16 +366,11 @@ main {
   width: 120px;
   height: 28px;
 
-  /* p-big */
-
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 23px;
   line-height: 122%;
-  /* identical to box height, or 28px */
-
-  /* White */
 
   color: #ffffff;
 }
@@ -413,9 +408,7 @@ main {
   background: #286562;
   border-radius: 50px 0 0 50px;
 }
-.popular__item:hover {
-  background-size: 120% auto;
-}
+
 .popular__item:active .item__btn,
 .story__back:active .item__btn {
   background: #efa501;
@@ -436,15 +429,6 @@ main {
   height: 100%;
   background: #efa501;
   border-radius: 50px 0 0 50px;
-}
-.firstPic {
-  width: 100%;
-  height: 531px;
-  background-size: 100%;
-  border-radius: 50px;
-  overflow: hidden;
-  cursor: pointer;
-  background-size: cover;
 }
 
 .main__form {
@@ -470,11 +454,8 @@ main {
   font-weight: 400;
   font-size: 20px;
   line-height: 142%;
-  /* or 28px */
 
   text-align: center;
-
-  /* Gray 300 */
 
   color: #a6a6a6;
 }
@@ -489,8 +470,6 @@ form {
 
   width: 1170px;
   height: 986px;
-
-  /* White */
 
   background: #ffffff;
   border-radius: 50px;
@@ -540,9 +519,6 @@ select {
   font-weight: 400;
   font-size: 20px;
   line-height: 142%;
-  /* or 28px */
-
-  /* Black */
 
   color: #1b1f2b;
 }
@@ -622,9 +598,6 @@ option:checked {
   font-weight: 400;
   font-size: 20px;
   line-height: 142%;
-  /* or 28px */
-
-  /* Black */
 
   color: #1b1f2b;
 }
@@ -652,7 +625,7 @@ option:checked {
   height: 26px;
   background: #ffffff;
   border-radius: 50%;
-  /* border: solid 5px #ffffff; */
+
   outline: solid 2px #1b1f2b;
   cursor: pointer;
   position: relative;
@@ -687,9 +660,6 @@ option:checked {
   font-weight: 400;
   font-size: 20px;
   line-height: 142%;
-  /* or 28px */
-
-  /* Black */
 
   color: #1b1f2b;
   cursor: pointer;
@@ -708,11 +678,8 @@ option:checked {
   font-weight: 400;
   font-size: 17px;
   line-height: 142%;
-  /* or 24px */
 
   letter-spacing: -0.01em;
-
-  /* Gray 300 */
 
   color: #a6a6a6;
   cursor: pointer;
@@ -748,8 +715,6 @@ label span:hover {
   top: 0;
   bottom: 0;
 
-  /* Black */
-
   background-image: url("./img/form_chek.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -778,8 +743,6 @@ label span:hover {
   width: 235px;
   height: 58px;
 
-  /* Green 400 */
-
   background: #286562;
   border-radius: 10px;
 
@@ -788,9 +751,7 @@ label span:hover {
   font-weight: 400;
   font-size: 20px;
   line-height: 142%;
-  /* or 28px */
 
-  /* White */
   border-color: none;
   color: #ffffff;
   cursor: pointer;
@@ -808,8 +769,6 @@ label span:hover {
   width: 235px;
   height: 58px;
 
-  /* Green 100 */
-
   background: #e0f0e5;
   border-radius: 10px;
 
@@ -820,9 +779,6 @@ label span:hover {
   font-weight: 400;
   font-size: 20px;
   line-height: 142%;
-  /* or 28px */
-
-  /* Green 400 */
 
   color: #286562;
 
@@ -865,8 +821,6 @@ label span:hover {
   width: 570px;
   height: 673px;
 
-  /* Beige 200 */
-
   background: #f4f0e9;
   border-radius: 50px;
 }
@@ -877,9 +831,6 @@ label span:hover {
   font-weight: 700;
   font-size: 23px;
   line-height: 122%;
-  /* or 28px */
-
-  /* Black */
 
   color: #1b1f2b;
   margin: 0;
@@ -903,9 +854,6 @@ label span:hover {
   font-weight: 500;
   font-size: 35px;
   line-height: 122%;
-  /* identical to box height, or 43px */
-
-  /* Black */
 
   color: #1b1f2b;
   margin-bottom: 10px;
@@ -917,11 +865,8 @@ label span:hover {
   font-weight: 400;
   font-size: 17px;
   line-height: 142%;
-  /* or 24px */
 
   letter-spacing: -0.01em;
-
-  /* Gray 300 */
 
   color: #a6a6a6;
 }
@@ -952,13 +897,11 @@ label span:hover {
   width: 97%;
 }
 .firstLine img {
-  /* width: 442.5px; */
   width: 23.8%;
   height: 301px;
   border-radius: 50px;
 }
 .secondLine img {
-  /* width: 349.16px; */
   width: 18.2%;
   height: 301px;
   border-radius: 50px;
@@ -996,7 +939,6 @@ label span:hover {
   height: 567px;
   border-radius: 50px;
   gap: 37px;
-  /* background: url(./img/header.jpg) center no-repeat; */
   background: url("./img/story_photo/1.jpg") center no-repeat;
   background-size: 100%;
 
@@ -1043,9 +985,6 @@ label span:hover {
   font-weight: 500;
   font-size: 35px;
   line-height: 122%;
-  /* identical to box height, or 43px */
-
-  /* White */
 
   color: #ffffff;
 
@@ -1090,9 +1029,6 @@ li {
   font-weight: 400;
   font-size: 20px;
   line-height: 142%;
-  /* or 28px */
-
-  /* White */
 
   color: #ffffff;
   cursor: pointer;
@@ -1147,9 +1083,6 @@ li {
   font-weight: 500;
   font-size: 35px;
   line-height: 122%;
-  /* or 43px */
-
-  /* Black */
 
   color: #1b1f2b;
 }
@@ -1161,9 +1094,6 @@ span {
   font-weight: 400;
   font-size: 17px;
   line-height: 142%;
-  /* or 28px */
-
-  /* Gray 300 */
 
   color: #a6a6a6;
 }
@@ -1188,7 +1118,6 @@ footer {
   width: 1920px;
   height: 88px;
   max-width: 100%;
-  /* Beige 200 */
 
   background: #f4f0e9;
 }
@@ -1228,9 +1157,6 @@ footer h3 {
   font-weight: 400;
   font-size: 20px;
   line-height: 142%;
-  /* or 28px */
-
-  /* Gray 300 */
 
   color: #a6a6a6;
 }
@@ -1241,9 +1167,6 @@ footer h3 {
   font-weight: 400;
   font-size: 20px;
   line-height: 142%;
-  /* or 28px */
-
-  /* Black */
 
   color: #1b1f2b;
 }
