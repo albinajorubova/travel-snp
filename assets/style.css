@@ -58,14 +58,21 @@ header {
 
 .scroll__header a {
   color: #1b1f2b;
+  text-decoration: none;
   transition: border-bottom 0.3s linear;
 }
-
-.scroll__header a:hover {
+.nav__link,
+.numb {
+  border-bottom: 1px solid transparent;
+}
+.scroll__header .nav__link:hover {
   cursor: pointer;
   border-bottom: 1px solid #1b1f2b;
 }
-
+.noscroll .nav__link:hover {
+  cursor: pointer;
+  border-bottom: 1px solid #ffffff;
+}
 .header__inner {
   max-width: 1168px;
   width: 100%;
@@ -86,11 +93,10 @@ header {
 
   justify-content: center;
 }
-
-.nav__link {
+.noscroll .nav__link {
   color: #fff;
   text-decoration: none;
-  transition: color 0.1s linear;
+  transition: color 0.3s linear;
 }
 .navlink-item {
   display: none;
@@ -102,11 +108,6 @@ header {
   display: flex;
   gap: 50px;
   font-size: 17px;
-}
-
-.nav__link:hover {
-  cursor: pointer;
-  border-bottom: 1px solid #ffffff;
 }
 
 .header__logo {
