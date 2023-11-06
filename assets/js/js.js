@@ -1,7 +1,6 @@
 const scrollHead = document.getElementById("scroll1");
 const height = 450;
 window.addEventListener("scroll", (ev) => {
-  console.log("hi");
   if (scrollY > height) {
     scrollHead.style.display = "block";
   } else {
@@ -33,3 +32,10 @@ function onTabClick(item) {
     }
   });
 }
+
+const phoneInput = document.getElementById("phone-input");
+const maskOptions = {
+  mask: "+7 ( 9 9 9 ) 9 9 9 - 9 9 - 9 9 ",
+};
+const phoneMask = new Inputmask(maskOptions);
+phoneMask.mask(phoneInput);
