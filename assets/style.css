@@ -957,7 +957,6 @@ label span:hover {
   gap: 37px;
   background: url("./img/story_photo/1.jpg") center no-repeat;
   background-size: 100%;
-
   margin-bottom: 50px;
   cursor: pointer;
   transition: background-size 0.3s ease;
@@ -994,7 +993,6 @@ label span:hover {
   cursor: pointer;
   max-width: 100%;
 }
-
 .story__desc h3 {
   font-family: "Roboto";
   font-style: normal;
@@ -1240,7 +1238,7 @@ span a:active {
 
 @media (max-width: 1700px) {
   .firstLine .picItem:nth-child(2),
-  .secondLine .picItem:nth-child(2),
+  .secondLine .picItem:nth-child(3),
   .thirdLine .picItem:nth-child(4) {
     display: none;
   }
@@ -1256,7 +1254,7 @@ span a:active {
     height: 301px;
   }
   .secondLine .picItem {
-    width: 225px;
+    width: 231px;
     height: 301px;
   }
 }
@@ -1283,6 +1281,13 @@ span a:active {
   }
 }
 @media (max-width: 1024px) {
+  #pic8 img {
+    content: url("./img/travel_photo/mashina1024.png");
+  }
+
+  #pic9 img {
+    content: url("./img/travel_photo/gorod21024.png");
+  }
   .header__inner {
     max-width: 910px;
     margin: 28.88px auto;
@@ -1445,6 +1450,10 @@ span a:active {
     margin-right: 10px;
     margin-left: 10px;
   }
+  .header__logo a {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
 }
 @media (max-width: 750px) {
   .picItem img {
@@ -1468,6 +1477,9 @@ span a:active {
   .secondLine .picItem {
     width: 165px;
     height: 210px;
+  }
+  .secondLine .picItem {
+    border-radius: 40px;
   }
 }
 @media (max-width: 615px) {
@@ -1681,6 +1693,7 @@ span a:active {
     margin-left: 0px;
     margin-right: 0px;
   }
+
   .header__inner {
     max-width: 318px;
     margin: 20px;
@@ -1714,6 +1727,10 @@ span a:active {
   }
   .main__title {
     font-size: 34px;
+    width: 318px;
+  }
+  .group__title p {
+    width: 318px;
   }
   .tabs__main {
     flex-wrap: wrap;
@@ -1735,8 +1752,18 @@ span a:active {
     width: auto;
     height: auto;
   }
+  .intro__inner p br {
+    display: none;
+  }
+  .group__title p br {
+    display: none;
+  }
+  .travel__stories .group__title {
+    margin-bottom: 50px;
+  }
   .intro__inner p {
     font-size: 16px;
+    width: 310px;
   }
   .popular__block {
     display: grid;
