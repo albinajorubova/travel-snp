@@ -917,8 +917,8 @@ label span:hover {
   justify-items: center;
 }
 .firstLine .picItem {
-  max-width: 442.5px;
-  width: 100%;
+  width: 442.5px;
+  max-width: 100%;
   height: 301px;
   overflow: hidden;
 }
@@ -929,8 +929,8 @@ label span:hover {
   overflow: hidden;
 }
 .secondLine .picItem {
-  max-width: 349.16px;
-  width: 100%;
+  width: 347.16px;
+  max-width: 100%;
   height: 301px;
   overflow: hidden;
 }
@@ -1284,7 +1284,9 @@ span a:active {
   #pic8 img {
     content: url("./img/travel_photo/mashina1024.png");
   }
-
+  #pic3 img {
+    content: url("./img/travel_photo/chel.png");
+  }
   #pic9 img {
     content: url("./img/travel_photo/gorod21024.png");
   }
@@ -1719,6 +1721,9 @@ span a:active {
   .main__form {
     padding-top: 75px;
   }
+  #ture2 p br {
+    display: block;
+  }
   #reviews {
     padding-top: 75px;
   }
@@ -1797,6 +1802,7 @@ span a:active {
     padding-bottom: 40px;
     gap: 30px;
     margin-top: 40px;
+    border-radius: 30px;
   }
   .lab_inp label {
     font-size: 16px;
@@ -1882,6 +1888,7 @@ span a:active {
     height: auto;
     justify-content: normal;
     gap: 40px;
+    border-radius: 20px;
   }
   .card__item p {
     font-size: 16px;
@@ -1986,12 +1993,13 @@ span a:active {
   }
   footer {
     width: 360px;
+    padding: 21px;
   }
   .footer__content {
     width: 318px;
-    height: 28px;
+    height: 53px;
     flex-direction: column;
-    gap: 0;
+    gap: 7px;
   }
   footer a {
     font-size: 16px;
@@ -2082,6 +2090,49 @@ span a:active {
     display: none;
   }
   .block__footer {
-    gap: 5px;
+    gap: 1px;
+  }
+  .story__desc p,
+  li {
+    font-size: 14px;
+    width: auto;
+  }
+  .card__item {
+    padding: 20px;
+    width: 290px;
+    height: auto;
+    justify-content: normal;
+    gap: 40px;
+    border-radius: 20px;
+  }
+  footer h3 {
+    font-size: 14px;
+  }
+  .nav__social svg {
+    width: 18px;
+    height: 18px;
+  }
+  .main__title {
+    font-size: 20px;
+  }
+  .group__title {
+    font-size: 14px;
+  }
+  .group__title p {
+    width: 290px;
+  }
+  .nav__social span {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 142%;
+    color: #1b1f2b;
+  }
+  .footer__content {
+    width: 220px;
+    height: 38px;
+    flex-direction: column;
+    gap: 3px;
   }
 }
