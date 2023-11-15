@@ -37,9 +37,11 @@ input {
   border-color: none;
 }
 header {
-  background: url(./img/header.jpg) center/cover no-repeat;
+  /* background: url(./img/header.jpg) center/cover no-repeat; */
+  background: url(./img/header.jpg) center / 100% auto no-repeat,
+    lightgray 50% / cover no-repeat;
   height: 52rem;
-  width: 150em;
+  width: 100%;
   max-width: 100%;
   margin: 0 auto;
 }
@@ -1280,6 +1282,16 @@ span a:active {
     font-size: 30px;
   }
 }
+@media (max-width: 1920px) {
+  header {
+    background: url(./img/header.jpg) center/cover no-repeat;
+
+    height: 52rem;
+    width: 150rem;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
 @media (max-width: 1024px) {
   #pic8 img {
     content: url("./img/travel_photo/mashina1024.png");
@@ -2100,7 +2112,7 @@ span a:active {
         rgba(0, 0, 0, 0) 39.9%
       ),
       linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
-      url(./img/header1024.png) center / 270% auto no-repeat,
+      url(./img/header1024.png) center / 290% auto no-repeat,
       lightgray 50% / cover no-repeat;
   }
   .header__logo {
