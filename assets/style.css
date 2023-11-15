@@ -1290,6 +1290,24 @@ span a:active {
   #pic9 img {
     content: url("./img/travel_photo/gorod21024.png");
   }
+  .intro__inner p br {
+    display: none;
+  }
+  header {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0) 39.9%
+      ),
+      linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
+      url("./img/header1024.png") center / 122% auto no-repeat,
+      lightgray 50% / cover no-repeat;
+  }
+
+  .intro__inner p {
+    max-width: 442px;
+    width: 100%;
+  }
   .header__inner {
     max-width: 910px;
     margin: 28.88px auto;
@@ -1360,6 +1378,15 @@ span a:active {
   .details p,
   span {
     font-size: 17px;
+  }
+}
+@media (max-width: 1022px) {
+  header {
+    background: url(./img/header.jpg) center/cover no-repeat;
+    height: 52rem;
+    width: 150em;
+    max-width: 100%;
+    margin: 0 auto;
   }
 }
 @media (max-width: 850px) {
@@ -1691,11 +1718,24 @@ span a:active {
   }
 }
 @media (max-width: 360px) {
+  header {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0) 39.9%
+      ),
+      linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
+      url(./img/header1024.png) center / 220% auto no-repeat,
+      lightgray 50% / cover no-repeat;
+  }
+
   .scroll__header a {
     margin-left: 0px;
     margin-right: 0px;
   }
-
+  .tabs__main {
+    padding: 0%;
+  }
   .header__inner {
     max-width: 318px;
     margin: 20px;
@@ -1768,8 +1808,10 @@ span a:active {
   }
   .intro__inner p {
     font-size: 16px;
-    width: 310px;
+    max-width: 310px;
+    width: 100%;
   }
+
   .popular__block {
     display: grid;
     gap: 18px;
@@ -2051,13 +2093,25 @@ span a:active {
 }
 
 @media (max-width: 359px) {
+  header {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0) 39.9%
+      ),
+      linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
+      url(./img/header1024.png) center / 270% auto no-repeat,
+      lightgray 50% / cover no-repeat;
+  }
   .header__logo {
     font-size: 20px;
   }
   .header__inner {
-    max-width: 250px;
+    max-width: 87%;
     margin: 28.88px;
     margin-top: -0.88px;
+    /* gap: 40px; */
+    width: 100%;
   }
   .arrow-select::before {
     width: 20px;
@@ -2068,15 +2122,16 @@ span a:active {
     font-size: 28px;
   }
   .popular__back {
-    width: 290px;
+    width: 100%;
     height: 290px;
     padding: 25px;
     border-radius: 20px;
   }
   .popular__item {
-    width: 290px;
+    width: 85%;
     height: 290px;
     border-radius: 20px;
+    margin: 0 auto;
   }
   .firstLine .picItem,
   .thirdLine .picItem,
@@ -2104,6 +2159,26 @@ span a:active {
     justify-content: normal;
     gap: 40px;
     border-radius: 20px;
+  }
+  form {
+    width: 93%;
+    height: auto;
+    padding: 20px;
+    padding-bottom: 40px;
+    gap: 30px;
+    margin-top: 40px;
+    border-radius: 30px;
+  }
+  .twoBtn input {
+    width: 40%;
+    height: 47px;
+    padding: 0;
+    font-size: 16px;
+  }
+  .twoBtn button {
+    font-size: 16px;
+    width: 40%;
+    height: 47px;
   }
   footer h3 {
     font-size: 14px;
