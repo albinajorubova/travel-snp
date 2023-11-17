@@ -1429,7 +1429,7 @@ span a:active {
     flex-wrap: wrap;
     width: 100vw;
     gap: 10px;
-    padding: 0 51.5px;
+    /* padding: 0 51.5px; */
     margin: 30px auto;
   }
   .header__nav {
