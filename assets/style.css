@@ -531,7 +531,9 @@ select {
 
   color: #1b1f2b;
 }
-
+.lab_inp textarea {
+  resize: none;
+}
 .lab_inp input,
 .lab_inp select,
 .lab_inp textarea {
@@ -713,8 +715,10 @@ label span:hover {
 }
 
 .fake__check {
-  width: 26px;
-  height: 26px;
+  min-width: 20px;
+  min-height: 20px;
+  max-width: 26px;
+  max-height: 26px;
   border: 2px #1b1f2b solid;
   border-radius: 5px;
   position: relative;
@@ -958,7 +962,7 @@ label span:hover {
   border-radius: 50px;
   gap: 37px;
   background: url("./img/story_photo/1.jpg") center no-repeat;
-  background-size: 100%;
+  background-size: auto 100%;
   margin-bottom: 50px;
   cursor: pointer;
   transition: background-size 0.3s ease;
@@ -969,7 +973,7 @@ label span:hover {
   margin: 0;
 }
 .block__story:hover {
-  background-size: 120% auto;
+  background-size: auto 120%;
 }
 .story__back {
   box-sizing: border-box;
@@ -1321,7 +1325,7 @@ span a:active {
         rgba(0, 0, 0, 0) 39.9%
       ),
       linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
-      url("./img/header1024.png") center / 122% auto no-repeat,
+      url("./img/header1024.png") center / auto 100% no-repeat,
       lightgray 50% / cover no-repeat;
   }
 
@@ -1383,10 +1387,12 @@ span a:active {
   .block__story {
     width: 918px;
     height: 567px;
-    background-size: cover;
+    background-size: auto 100%;
+    background-position: center;
   }
   .block__story:hover {
-    background-size: 140% auto;
+    background-size: auto 120%;
+    transition: all 0.3s ease;
   }
   .story__back {
     width: 918px;
@@ -1399,20 +1405,8 @@ span a:active {
     width: 918px;
     height: 28px;
   }
-  .details p,
-  span {
-    font-size: 17px;
-  }
 }
-@media (max-width: 1022px) {
-  header {
-    background: url(./img/header.jpg) center/cover no-repeat;
-    height: 52rem;
-    width: 150em;
-    max-width: 100%;
-    margin: 0 auto;
-  }
-}
+
 @media (max-width: 850px) {
   .card__item p {
     font-size: 18px;
@@ -1756,7 +1750,7 @@ span a:active {
         rgba(0, 0, 0, 0) 39.9%
       ),
       linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
-      url(./img/header1024.png) center / 220% auto no-repeat,
+      url(./img/header1024.png) center / auto 100% no-repeat,
       lightgray 50% / cover no-repeat;
   }
   .header__inner {
@@ -2020,7 +2014,7 @@ span a:active {
   .block__story {
     width: 318px;
     height: 455px;
-    background-size: cover;
+    background-size: auto 100%;
   }
   .story__back {
     width: 318px;
@@ -2157,7 +2151,7 @@ span a:active {
   .arrow-select::before {
     width: 20px;
     height: 20px;
-    bottom: 20%;
+    bottom: 15%;
   }
   .main__title {
     font-size: 28px;
