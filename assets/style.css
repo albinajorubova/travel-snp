@@ -1292,7 +1292,16 @@ span a:active {
     margin: 0 auto;
   }
 }
+@media (max-width: 1200px) {
+  .header__inner {
+    padding: 20px;
+  }
+}
 @media (max-width: 1024px) {
+  .header__inner {
+    padding: 0px;
+    padding-top: 20px;
+  }
   #pic8 img {
     content: url("./img/travel_photo/mashina1024.png");
   }
@@ -1376,6 +1385,9 @@ span a:active {
     height: 567px;
     background-size: cover;
   }
+  .block__story:hover {
+    background-size: 140% auto;
+  }
   .story__back {
     width: 918px;
     height: 567px;
@@ -1415,6 +1427,9 @@ span a:active {
 
   .footer__content {
     gap: 0;
+  }
+  .header__inner {
+    padding: 20px;
   }
 }
 @media (max-width: 950px) {
@@ -1484,6 +1499,10 @@ span a:active {
   .lab_inp input,
   select {
     width: 100%;
+  }
+  .popular__item:hover .item__btn,
+  .story__back:hover .item__btn {
+    margin-left: -10px;
   }
 }
 @media (max-width: 800px) {
@@ -1740,7 +1759,10 @@ span a:active {
       url(./img/header1024.png) center / 220% auto no-repeat,
       lightgray 50% / cover no-repeat;
   }
-
+  .header__inner {
+    padding: 0px;
+    padding-top: 20px;
+  }
   .scroll__header a {
     margin-left: 0px;
     margin-right: 0px;
@@ -1848,6 +1870,13 @@ span a:active {
   }
   .group__title {
     font-size: 16px;
+  }
+  .item__btn {
+    width: 170px;
+  }
+  .popular__item:hover .item__btn,
+  .story__back:hover .item__btn {
+    border-radius: 30px;
   }
   form {
     width: 318px;
