@@ -400,7 +400,6 @@ main {
 .popular__item:hover .item__btn,
 .story__back:hover .item__btn {
   position: relative;
-  z-index: 1;
   padding-left: 30px;
   margin-left: -30px;
   border-radius: 50px;
