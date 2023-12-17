@@ -737,6 +737,7 @@ label span:hover {
   max-height: 26px;
   width: 26px;
   height: 26px;
+  flex-shrink: 0;
   border: 2px #1b1f2b solid;
   border-radius: 5px;
 
