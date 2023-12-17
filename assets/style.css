@@ -410,20 +410,6 @@ main {
   background: #286562;
 }
 
-.popular__item:hover .item__btn::before,
-.story__back:hover .item__btn::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 30px;
-  height: 100%;
-
-  border-radius: 50px 0 0 50px;
-
-  background: #286562;
-}
-
 .popular__item:active .item__btn,
 .story__back:active .item__btn {
   position: relative;
@@ -433,18 +419,6 @@ main {
   border-radius: 50px;
   overflow: visible;
 
-  background: #efa501;
-}
-.popular__item:active .item__btn::before,
-.story__back:active .item__btn::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 30px;
-  height: 100%;
-
-  border-radius: 50px 0 0 50px;
   background: #efa501;
 }
 
